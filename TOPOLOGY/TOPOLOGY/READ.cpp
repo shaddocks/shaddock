@@ -56,5 +56,9 @@ void readtable(int *dist, int *path, int vertex_num, int source,bool judge[100])
 		}
 	}
 	cout << "    asd";
+<<<<<<< HEAD
 cout<<"sdcs";
+=======
+cout<<"jjbb";
+>>>>>>> fa08213e8eb1084b6c055e71821a612106051e58
 } 
