@@ -47,6 +47,9 @@ int Addnode(int topology[100][100], int number, bool judge[100]) {
 			++number;
 			judge[f] = true;
 			cout << "依次输入相关点 " << "边的权值: " << endl;
+			for (int m = 0; m < 100; ++m) {
+				topology[i][m] = topology[m][i] = MAX;
+			}
 			for (int m = 0; m < j; ++m) {
 				cin >> x >> y;
 				judge[x - 1] = true;
@@ -70,6 +73,9 @@ int Addnode(int topology[100][100], int number, bool judge[100]) {
 			++number;
 			judge[i] = true;
 			cout << "依次输入相关点 " << "边的权值: " << endl;
+			for (int m = 0; m < 100; ++m) {
+				topology[i][m] = topology[m][i] = MAX;
+			}
 			for (int m = 0; m < j; ++m) {
 				cin >> x >> y;
 				judge[x - 1] = true;
@@ -96,6 +102,9 @@ int Addnode(int topology[100][100], int number, bool judge[100]) {
 		++number;
 		judge[i] = true;
 		cout << "依次输入相关点 " << "边的权值: " << endl;
+		for (int m = 0; m < 100; ++m) {
+			topology[i][m] = topology[m][i] = MAX;
+		}
 		for (int m = 0; m < j; ++m) {
 			cin >> x >> y;
 			judge[x - 1] = true;
