@@ -21,6 +21,7 @@ void writefile(int node, int a[100][100],bool judge[100]) {
 			out << judge[i] << " ";
 		}
 		out << endl;
+		cout << "jiangke";
 	}
 	out.close();
 }
